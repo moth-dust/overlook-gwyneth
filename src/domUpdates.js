@@ -71,6 +71,10 @@ function login(username, password){
                     console.error(error)
                 };
             }
+        if (user > 50){
+            showElements([loginWarning]);
+            return
+        }
         dataModel.customer = fetchUser(user);
         hideElements([loginPage, loginWarning, loginContainer]);
         showElements([homePage]);
