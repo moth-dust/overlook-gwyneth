@@ -18,6 +18,7 @@ const search = document.getElementById('search')
 const loginPage = document.getElementById('login-page')
 const homePage = document.getElementById('homepage')
 const bookingsRooms = document.getElementById('bookings-rooms')
+const loginContainer = document.querySelector('.login-container')
 restrictDate()
 
 //event listeners
@@ -72,7 +73,7 @@ function login(username, password){
                 };
             }
         dataModel.customer = fetchUser(user);
-        hideElements([loginPage, loginWarning]);
+        hideElements([loginPage, loginWarning, loginContainer]);
         showElements([homePage]);
         setTimeout(()=>{
             try{
@@ -80,7 +81,7 @@ function login(username, password){
             } catch {
                 throw new Error('Server Response Timeout: Login Failed')
             }
-        },1000)
+        },100)
     };
 };
 function displaySearch(){
