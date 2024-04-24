@@ -5,6 +5,7 @@
 - Run `npm install` in both of the newly created directories.
 - Run `npm start` in both of the newly created directories.
 - Open any chromium browser and navigate to `http://localhost:8080/`
+- To run tests, run `npm test` in the root of the front end directory.
 ## Preview of the app running:
 
 <img src='https://i.imgur.com/DOW7Gln.png' alt="app-preview">
