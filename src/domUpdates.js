@@ -1,7 +1,6 @@
-import { expect } from "chai";
-import { apiCall, fetchUser} from "./apiCalls";
+import { fetchUser} from "./apiCalls";
 import { calculateTotalCost, userBookings } from "./bookings";
-import { buttonRender, mapRoomsFromBookings, renderRoomCards, renderUserCard } from "./render";
+import {  mapRoomsFromBookings, renderRoomCards, renderUserCard } from "./render";
 import { dataModel, apiData } from "./scripts";
 import { convertDate, filterRoomsByDate, filterRoomsByType } from "./search";
 
